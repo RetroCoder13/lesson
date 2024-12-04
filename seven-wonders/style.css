@@ -17,6 +17,7 @@ h1 {
     right: calc(0px - var(--menuWidth));
     background-color: rgba(0,0,0,0.8);
     height: 100%;
+    border-top-left-radius: 20px;
 }
 
 #menu a {
