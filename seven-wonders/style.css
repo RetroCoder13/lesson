@@ -3,7 +3,7 @@
 body {
     --menuWidth: 250px;
     font-family: Montserrat;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
