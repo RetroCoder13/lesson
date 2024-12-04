@@ -54,3 +54,20 @@ h1 {
     right: 0px;
     transform: translate(-50%);
 }
+
+form {
+    display: grid;
+    grid-template-columns: 150px 300px;
+}
+
+@media only screen and (max-width: 465px){
+    form {
+        display: grid;
+        grid-template-columns: 150px auto;
+    }
+}
+
+form input[type=submit] {
+    width: 100px;
+    transform: translate(25%);
+}
