@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Montserrat;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+#menu {
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    right: -200px;
+    background-color: rgba(0,0,0,0.8);
+    height: 100%;
+    color: white;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menuButton {
+    width: 100%;
+    height: 10px;
+}
+
+#menuButton img {
+    width: 20px;
+    position: absolute;
+    right: 0px;
+    transform: translate(-50%);
+}
+
+@keyframes pop-in {
+    from {right: -200px;}
+    to {right: 0px;}
+}
+
+@keyframes pop-out {
+    from {right: 0px;}
+    to {right: -200px;}
+}
