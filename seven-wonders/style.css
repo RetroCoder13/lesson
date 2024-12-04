@@ -16,7 +16,11 @@ h1 {
     right: -200px;
     background-color: rgba(0,0,0,0.8);
     height: 100%;
+}
+
+#menu a {
     color: white;
+    text-decoration: none;
 }
 
 #menu ul {
