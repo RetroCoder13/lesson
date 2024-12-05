@@ -20,7 +20,6 @@ img {
     top: 30px;
     right: calc(0px - var(--menuWidth));
     background-color: rgba(0,0,0,0.8);
-    height: calc(100% - 30px);
     border-top-left-radius: 20px;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
