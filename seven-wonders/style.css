@@ -123,6 +123,11 @@ form input[type=submit]:hover {
     opacity: 1;
 }
 
+#gallery img:hover + p {
+    cursor: pointer;
+    opacity: 1;
+}
+
 @keyframes slide {
     from {left: 0px}
     to {left: -2270px}
@@ -137,4 +142,10 @@ div#title {
     background-color: #1e1e1e;
     color: white;
     text-align: center;
+}
+
+.image p {
+    font-size: 12px;
+    opacity: 0;
+    transition-duration: .5s;
 }
