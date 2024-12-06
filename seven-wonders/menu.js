@@ -1,5 +1,4 @@
 var menuButton = document.querySelector("#menuButton img")
-var homeButton = document.querySelector("#homeButton img")
 var menu = document.querySelector("#menu")
 
 if(document.querySelector("#homeButton img")){
@@ -10,10 +9,6 @@ if(document.querySelector("#homeButton img")){
 }
 window.onresize = function(){
     resizeMenu()
-}
-
-homeButton.onclick = function(){
-    location.href = "../"
 }
 
 var toggle = false
