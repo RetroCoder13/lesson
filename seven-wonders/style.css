@@ -138,3 +138,7 @@ div#title {
     color: white;
     text-align: center;
 }
+
+.image p {
+    font-size: 12px;
+}
