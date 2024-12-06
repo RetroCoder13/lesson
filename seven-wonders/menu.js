@@ -1,7 +1,7 @@
 var menuButton = document.querySelector("#menuButton img")
 var menu = document.querySelector("#menu")
 
-menu.style.height = `calc(${document.body.offsetHeight}px - 30px`
+menu.style.height = `calc(${document.documentElement.offsetHeight}px - 30px`
 
 var toggle = false
 menuButton.onclick = function(e){
