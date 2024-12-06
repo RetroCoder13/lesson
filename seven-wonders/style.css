@@ -23,6 +23,7 @@ img {
     border-top-left-radius: 20px;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
+    z-index: 1;
 }
 
 #menu a {
@@ -56,6 +57,10 @@ img {
     position: absolute;
     right: 0px;
     transform: translate(-50%);
+}
+
+#menuButton img:hover {
+    cursor: pointer;
 }
 
 form {
@@ -101,4 +106,28 @@ form input[type=submit] {
 form input[type=submit]:hover {
     background-color: lightgray;
     cursor: pointer;
+}
+
+#gallery {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    animation: slide 20s infinite linear;
+}
+
+#gallery img {
+    height: 200px;
+    width: fit-content;
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+#gallery img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+@keyframes slide {
+    from {left: 0px}
+    to {left: -2270px}
 }
