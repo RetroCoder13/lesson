@@ -185,3 +185,19 @@ button:hover {
     background-color: lightgray;
     cursor: pointer;
 }
+
+#score {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+#score #correct {
+    color: green;
+}
+
+#score #incorrect {
+    color: red;
+}

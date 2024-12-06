@@ -1,10 +1,45 @@
 var questionElement = document.querySelector("#quiz #question")
 var answerElements = document.querySelectorAll("#quiz button")
+var correctElement = document.querySelector("#score #correct")
+var incorrectElement = document.querySelector("#score #incorrect")
 
-function newQuestion(question,answers){
+var request = new XMLHttpRequest()
+request.open("GET",`./questions.json`,false);
+request.send()
+var questions = JSON.parse(request.responseText)
+console.log(questions)
+
+function newQuestion(){
+    let questionNumber = Math.ceil(Math.random()*Object.keys(questions).length)
+    let question = questions[questionNumber]["question"]
+    let answers = [questions[questionNumber]["correctAnswer"], questions[questionNumber]["answer1"], questions[questionNumber]["answer2"], questions[questionNumber]["answer3"]]
+    correctAnswerPosition = parseInt(Math.random()*4);
+    correctAnswer = false;
+
     questionElement.innerHTML = question
-
     for(let i=0;i<4;i++){
-        answerElements[i].innerHTML = answers[i]
-    }
+        if(correctAnswerPosition==i){
+            answerElements[i].innerHTML = answers[0]
+            answerElements[i].id = "answer"
+            correctAnswer = true;
+        } else {
+            answerElements[i].id = ""
+            if(correctAnswer==true){
+                answerElements[i].innerHTML = answers[i]
+            } else {
+                answerElements[i].innerHTML = answers[i+1]
+            }
+        };
+    };
 }
+
+function answer(element){
+    if(element.id == "answer"){
+        correctElement.innerHTML = parseInt(correctElement.innerHTML) + 1
+    } else {
+        incorrectElement.innerHTML = parseInt(incorrectElement.innerHTML) + 1
+    }
+    newQuestion()
+}
+
+newQuestion()
