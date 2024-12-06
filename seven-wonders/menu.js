@@ -2,6 +2,12 @@ var menuButton = document.querySelector("#menuButton img")
 var homeButton = document.querySelector("#homeButton img")
 var menu = document.querySelector("#menu")
 
+if(document.querySelector("#homeButton img")){
+    var homeButton = document.querySelector("#homeButton img")
+    homeButton.onclick = function(){
+        location.href = "../"
+    }
+}
 window.onresize = function(){
     resizeMenu()
 }
