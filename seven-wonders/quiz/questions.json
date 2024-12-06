@@ -5,5 +5,222 @@
         "answer1":"c.2000 BC",
         "answer2":"c.600 BC",
         "answer3":"c.3000 BC"
+    },
+    "2":{
+        "question":"What was the Great Pyramid of Giza constructed out of?",
+        "correctAnswer":"Limestone",
+        "answer1":"Concrete",
+        "answer2":"Andesite",
+        "answer3":"Wood"
+    },
+    "3":{
+        "question":"What is the height of the Great Pyramid of Giza?",
+        "correctAnswer":"146.6m",
+        "answer1":"150m",
+        "answer2":"156.6m",
+        "answer3":"140m"
+    },
+    "4":{
+        "question":"How wide is the base of the Great Pyramid of Giza?",
+        "correctAnswer":"230.33m",
+        "answer1":"240m",
+        "answer2":"240.44m",
+        "answer3":"230m"
+    },
+    "5":{
+        "question":"What is the volume of the Great Pyramid of Giza?",
+        "correctAnswer":"2.6 million m^3",
+        "answer1":"2.6 million km^3",
+        "answer2":"2.7 million m^3",
+        "answer3":"2.7 million km^3"
+    },
+    "6":{
+        "question":"When was the Great Wall of China constructed?",
+        "correctAnswer":"7th Century BC",
+        "answer1":"8th Century BC",
+        "answer2":"6th Century BC",
+        "answer3":"5th Century BC"
+    },
+    "7":{
+        "question":"What was the Great Wall of China constructed out of?",
+        "correctAnswer":"Stone and Bricks",
+        "answer1":"Concrete and Bricks",
+        "answer2":"Limestone and Concrete",
+        "answer3":"Wood and Stone"
+    },
+    "8":{
+        "question":"What is the height of the Great Wall of China?",
+        "correctAnswer":"5m",
+        "answer1":"7m",
+        "answer2":"8m",
+        "answer3":"10m"
+    },
+    "9":{
+        "question":"How long is the Great Wall of China?",
+        "correctAnswer":"21,196.18 km",
+        "answer1":"22,196.81 km",
+        "answer2":"29,621.81 km",
+        "answer3":"20,961.18 km"
+    },
+    "10":{
+        "question":"When was Petra constructed?",
+        "correctAnswer":"5th Century BC",
+        "answer1":"7th Century BC",
+        "answer2":"6th Century BC",
+        "answer3":"8th Century BC"
+    },
+    "11":{
+        "question":"What was Petra constructed out of?",
+        "correctAnswer":"Bedrock and Sandstone",
+        "answer1":"Concrete and Sand",
+        "answer2":"Andesite and Bedrock",
+        "answer3":"Wood and Sandstone"
+    },
+    "12":{
+        "question":"What is Petra's evelvation?",
+        "correctAnswer":"810m",
+        "answer1":"830m",
+        "answer2":"800m",
+        "answer3":"820m"
+    },
+    "13":{
+        "question":"What is the area of Petra?",
+        "correctAnswer":"264 km^2",
+        "answer1":"263 km^2",
+        "answer2":"265 km^2",
+        "answer3":"266 km^2"
+    },
+    "14":{
+        "question":"When was The Colosseum constructed?",
+        "correctAnswer":"70 AD",
+        "answer1":"70 BC",
+        "answer2":"700 AD",
+        "answer3":"700 BC"
+    },
+    "15":{
+        "question":"What was The Colosseum constructed out of?",
+        "correctAnswer":"Limestone and Concrete",
+        "answer1":"Concrete and Andesite",
+        "answer2":"Andesite and Marble",
+        "answer3":"Wood and Concrete"
+    },
+    "16":{
+        "question":"What is the height of The Colosseum?",
+        "correctAnswer":"48m",
+        "answer1":"50m",
+        "answer2":"47m",
+        "answer3":"45m"
+    },
+    "17":{
+        "question":"What is the capaicty of The Colosseum?",
+        "correctAnswer":"50,000",
+        "answer1":"60,000",
+        "answer2":"70,000",
+        "answer3":"20,000"
+    },
+    "18":{
+        "question":"When was Chichén Itzá constructed?",
+        "correctAnswer":"600 AD",
+        "answer1":"60 BC",
+        "answer2":"60 AD",
+        "answer3":"600 BC"
+    },
+    "19":{
+        "question":"What was Chichén Itzá constructed out of?",
+        "correctAnswer":"Stone",
+        "answer1":"Concrete",
+        "answer2":"Andesite",
+        "answer3":"Limestone"
+    },
+    "20":{
+        "question":"What is the height of Chichén Itzá?",
+        "correctAnswer":"27m",
+        "answer1":"30m",
+        "answer2":"28m",
+        "answer3":"25m"
+    },
+    "21":{
+        "question":"When was Machu Picchu constructed?",
+        "correctAnswer":"c.1450 BC",
+        "answer1":"c.1500 BC",
+        "answer2":"c.1400 BC",
+        "answer3":"c.1550 BC"
+    },
+    "22":{
+        "question":"What was Machu Picchu constructed out of?",
+        "correctAnswer":"Andesite",
+        "answer1":"Limestone",
+        "answer2":"Stone",
+        "answer3":"Concrete"
+    },
+    "23":{
+        "question":"What is the elevation of Machu Picchu?",
+        "correctAnswer":"2430m",
+        "answer1":"2340m",
+        "answer2":"2400m",
+        "answer3":"2300m"
+    },
+    "24":{
+        "question":"What is the length of Machu Picchu?",
+        "correctAnswer":"32,000 hectares",
+        "answer1":"23,000 hectares",
+        "answer2":"30,000 hectares",
+        "answer3":"20,000 hectares"
+    },
+    "25":{
+        "question":"When was the Taj Mahal constructed?",
+        "correctAnswer":"1631",
+        "answer1":"1361",
+        "answer2":"1261",
+        "answer3":"1621"
+    },
+    "26":{
+        "question":"What was the Taj Mahal constructed out of?",
+        "correctAnswer":"White Marble",
+        "answer1":"White Concrete",
+        "answer2":"Stone",
+        "answer3":"Andesite"
+    },
+    "27":{
+        "question":"What is the height of the Taj Mahal?",
+        "correctAnswer":"73m",
+        "answer1":"37m",
+        "answer2":"80m",
+        "answer3":"77m"
+    },
+    "28":{
+        "question":"What is the area of the Taj Mahal?",
+        "correctAnswer":"17 hectares",
+        "answer1":"71 hectares",
+        "answer2":"15 hectares",
+        "answer3":"18 hectares"
+    },
+    "29":{
+        "question":"When was Christ the Redeemer constructed?",
+        "correctAnswer":"1922",
+        "answer1":"1292",
+        "answer2":"1229",
+        "answer3":"1932"
+    },
+    "30":{
+        "question":"What was Christ the Redeemer constructed out of?",
+        "correctAnswer":"Reinforced Concrete and Soapstone",
+        "answer1":"Reinforced Concrete and White Marble",
+        "answer2":"Sandstone and White Marble",
+        "answer3":"Wood and Stone"
+    },
+    "31":{
+        "question":"What is the height of Christ the Redeemer?",
+        "correctAnswer":"30m",
+        "answer1":"38m",
+        "answer2":"28m",
+        "answer3":"35m"
+    },
+    "32":{
+        "question":"What is the width of Christ the Redeemer?",
+        "correctAnswer":"28m",
+        "answer1":"30m",
+        "answer2":"35m",
+        "answer3":"38m"
     }
 }
