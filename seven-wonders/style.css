@@ -57,6 +57,7 @@ img {
     position: absolute;
     right: 0px;
     transform: translate(-50%);
+    z-index: 1;
 }
 
 #menuButton img:hover {
@@ -130,4 +131,14 @@ form input[type=submit]:hover {
 @keyframes slide {
     from {left: 0px}
     to {left: -2270px}
+}
+
+div#title {
+    position: relative;
+    left: -10px;
+    top: -20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
 }
