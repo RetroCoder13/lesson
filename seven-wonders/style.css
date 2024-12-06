@@ -6,10 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-    text-align: center;
-}
-
 img {
     width: 100%;
 }
@@ -35,7 +31,6 @@ img {
 #menu h1 {
     color: white;
     font-size: 20px;
-    text-align: left;
 }
 
 #menu a:hover {
@@ -57,6 +52,7 @@ img {
     position: absolute;
     right: 0px;
     transform: translate(-50%);
+    z-index: 1;
 }
 
 #menuButton img:hover {
@@ -130,4 +126,15 @@ form input[type=submit]:hover {
 @keyframes slide {
     from {left: 0px}
     to {left: -2270px}
+}
+
+div#title {
+    position: relative;
+    left: -10px;
+    top: -20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
 }
