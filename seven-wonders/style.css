@@ -172,3 +172,16 @@ div#title {
     opacity: 0;
     transition-duration: .5s;
 }
+
+button {
+    width: 100px;
+    transform: translate(25%);
+    background-color: white;
+    transition-duration: .2s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
