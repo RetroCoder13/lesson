@@ -1,7 +1,9 @@
 var menuButton = document.querySelector("#menuButton img")
 var menu = document.querySelector("#menu")
 
-menu.style.height = `calc(${document.documentElement.offsetHeight}px - 30px`
+window.onresize = function(){
+    resizeMenu()
+}
 
 var toggle = false
 menuButton.onclick = function(e){
@@ -23,3 +25,9 @@ function toggleMenu(){
         menu.style.right = "calc(0px - var(--menuWidth))"
     }
 }
+
+function resizeMenu(){
+    menu.style.height = `calc(${document.documentElement.offsetHeight}px - 30px`
+}
+
+resizeMenu()
