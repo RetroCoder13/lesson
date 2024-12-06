@@ -70,6 +70,15 @@ form {
     }
 }
 
+@media only screen and (min-width: 535px){
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+    }
+}
+
 form input {
     font-family: Montserrat;
     border: 1px solid black;
