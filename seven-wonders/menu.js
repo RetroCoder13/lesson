@@ -1,12 +1,17 @@
 var menuButton = document.querySelector("#menuButton img")
+var homeButton = document.querySelector("#homeButton img")
 var menu = document.querySelector("#menu")
 
 window.onresize = function(){
     resizeMenu()
 }
 
+homeButton.onclick = function(){
+    location.href = "../"
+}
+
 var toggle = false
-menuButton.onclick = function(e){
+menuButton.onclick = function(){
     toggleMenu()
 }
 

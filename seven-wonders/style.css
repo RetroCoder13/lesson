@@ -43,6 +43,9 @@ img {
 }
 
 #menuButton {
+    position: absolute;
+    left: 0px;
+    top: 5px;
     width: 100%;
     height: 10px;
 }
@@ -56,6 +59,26 @@ img {
 }
 
 #menuButton img:hover {
+    cursor: pointer;
+}
+
+#homeButton {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 100%;
+    height: 10px;
+}
+
+#homeButton img {
+    width: 20px;
+    position: absolute;
+    left: 0px;
+    transform: translate(50%);
+    z-index: 1;
+}
+
+#homeButton img:hover {
     cursor: pointer;
 }
 
