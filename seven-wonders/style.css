@@ -6,10 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-    text-align: center;
-}
-
 img {
     width: 100%;
 }
@@ -35,7 +31,6 @@ img {
 #menu h1 {
     color: white;
     font-size: 20px;
-    text-align: left;
 }
 
 #menu a:hover {
@@ -141,4 +136,5 @@ div#title {
     padding: 20px;
     background-color: #1e1e1e;
     color: white;
+    text-align: center;
 }
