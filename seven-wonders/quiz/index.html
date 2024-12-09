@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Response Submitted</title>
+    <title>Quiz</title>
 </head>
 <body>
     <div id="homeButton">
@@ -14,8 +14,9 @@
     </div>
     <div id="menu">
         <ul>
+            <br>
             <li><a href="../">Home</a></li>
-            <li><a href="../quiz/">Quiz</a></li>
+            <li><a href="./">Quiz</a></li>
             <br>
             <li><h1>The Wonders:</h1></li>
             <li><a href="../great-pyramid-of-giza/">Great Pyramid of Giza</a></li>
@@ -30,9 +31,22 @@
     </div>
     <div id="content">
         <div id="title">
-            <h1>Response Submitted</h1>
+            <h1>Quiz</h1>
+            <div id="score">
+                <p id="correct">0</p>
+                <p id="incorrect">0</p>
+            </div>
         </div>
-        <p id="data"></p>
+        
+        <div id="quiz">
+            <h2 id="question">Loading Questions...</h2>
+            <div id="buttons">
+                <button onclick="answer(this)"></button>
+                <button onclick="answer(this)"></button>
+                <button onclick="answer(this)"></button>
+                <button onclick="answer(this)"></button>
+            </div>
+        </div>
     </div>
 
     <script src="../menu.js"></script>
