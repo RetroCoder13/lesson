@@ -131,7 +131,12 @@ form input[type=submit]:hover {
     display: flex;
     gap: 10px;
     position: absolute;
-    animation: slide 20s infinite linear;
+    animation: slide 40s infinite linear;
+}
+
+#gallery:hover {
+    animation-play-state: paused;
+    /* animation-duration: 40s; */
 }
 
 #gallery img {
