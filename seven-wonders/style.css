@@ -188,6 +188,14 @@ button {
     justify-content: center;
 }
 
+button:disabled {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+button:disabled:hover {
+    background-color: rgba(255, 0, 0, .5);
+    cursor: not-allowed;
+}
 button:hover {
     background-color: lightgray;
     cursor: pointer;

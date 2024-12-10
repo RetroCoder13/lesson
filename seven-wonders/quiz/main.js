@@ -10,6 +10,10 @@ var questions = JSON.parse(request.responseText)
 console.log(questions)
 
 function newQuestion(){
+    attempts = 0
+    for(let i=0;i<answerElements.length;i++){
+        answerElements[i].disabled = false
+    }
     let questionNumber = Math.ceil(Math.random()*Object.keys(questions).length)
     let question = questions[questionNumber]["question"]
     let answers = [questions[questionNumber]["correctAnswer"], questions[questionNumber]["answer1"], questions[questionNumber]["answer2"], questions[questionNumber]["answer3"]]
@@ -17,7 +21,7 @@ function newQuestion(){
     correctAnswer = false;
 
     questionElement.innerHTML = question
-    for(let i=0;i<4;i++){
+    for(let i=0;i<answerElements.length;i++){
         if(correctAnswerPosition==i){
             answerElements[i].innerHTML = answers[0]
             answerElements[i].id = "answer"
@@ -33,13 +37,20 @@ function newQuestion(){
     };
 }
 
+var attempts = 0
 function answer(element){
     if(element.id == "answer"){
         correctElement.innerHTML = parseInt(correctElement.innerHTML) + 1
+        newQuestion()
     } else {
-        incorrectElement.innerHTML = parseInt(incorrectElement.innerHTML) + 1
+            incorrectElement.innerHTML = parseInt(incorrectElement.innerHTML) + 1
+            element.disabled = true
+            attempts++
+        if(attempts >= 3) {
+            newQuestion()
+            
+        }
     }
-    newQuestion()
 }
 
 newQuestion()
