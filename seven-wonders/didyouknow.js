@@ -5,7 +5,7 @@ function openDialogue(element){
 
 function closeDialogue(element){
     let textElement = element.children[0]
-    textElement.style.left = 'calc(100% - 50px)'
+    textElement.style.left = 'calc(100% - 25px)'
 }
 
 facts = [
