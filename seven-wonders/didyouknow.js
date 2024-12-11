@@ -13,6 +13,6 @@ facts = [
 ]
 
 window.onload = function(){
-    let textElement = document.querySelector('#did-you-know #text')
+    let textElement = document.querySelector('#did-you-know #text p')
     textElement.innerHTML = facts[0]
 }
