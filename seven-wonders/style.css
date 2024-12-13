@@ -273,3 +273,10 @@ button:hover {
     height: 50px;
     border-radius: 10px 0px 0px 10px;
 }
+
+#wikiLink {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    width: 100%;
+}
