@@ -51,10 +51,9 @@ img {
 }
 
 #menuButton img {
-    width: 20px;
+    width: 30px;
     position: absolute;
-    right: 0px;
-    transform: translate(-50%);
+    right: 5px;
     z-index: 1;
 }
 
@@ -71,10 +70,9 @@ img {
 }
 
 #homeButton img {
-    width: 20px;
+    width: 30px;
     position: absolute;
-    left: 0px;
-    transform: translate(50%);
+    left: 5px;
     z-index: 1;
 }
 
