@@ -128,7 +128,7 @@ form input[type=submit]:hover {
 #gallery {
     display: flex;
     gap: 10px;
-    position: absolute;
+    position: relative;
     animation: slide 40s infinite linear;
 }
 
