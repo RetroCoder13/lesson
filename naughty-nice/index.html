@@ -10,7 +10,7 @@
 <body>
     <div id="content">
         <div id="title">
-            <h1>Santa's Naughty and Nice Application</h1>
+            <h1>Santa's <span class="red">Naughty</span> and <span class="green">Nice</span> Application</h1>
         </div>
         <div id="form">
             <form action="">
@@ -21,7 +21,7 @@
                 <label for="">Postcode</label>
                 <input type="text" name="postcode" id="postcode">
                 <label for="">Total Score</label>
-                <input type="number" name="score" id="score" value="0">
+                <input type="number" name="score" id="score" value="0" class="greenInput" oninput="if(this.value >= 0){this.className='greenInput'}else{this.className='redInput'}">
                 <input type="submit" value="Submit">
 
                 <input type="text" name="nice" id="nice" hidden>

@@ -3,6 +3,7 @@
 * {
     font-family: Montserrat;
     text-align: center;
+    transition-duration: .2s;
 }
 
 form {
@@ -11,4 +12,22 @@ form {
     transform: translate(-150px);
     display: grid;
     grid-template-columns: 100px 200px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.redInput {
+    background-color: red;
+    color: white;
+}
+
+.greenInput {
+    background-color: green;
+    color: white;
 }
