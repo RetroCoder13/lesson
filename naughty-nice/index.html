@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naughty and Nice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="title">
+            <h1>Santa's Naughty and Nice Application</h1>
+        </div>
+        <div id="form">
+            <form action="">
+                <label for="">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="">Address</label>
+                <input type="text" name="address" id="address">
+                <label for="">Postcode</label>
+                <input type="text" name="postcode" id="postcode">
+                <label for="">Total Score</label>
+                <input type="number" name="score" id="score" value="0">
+                <input type="submit" value="Submit">
+
+                <input type="text" name="nice" id="nice" hidden>
+                <input type="text" name="naughty" id="naughty" hidden>
+            </form>
+        </div>
+        <div>
+        <button id="exportNice">Export Nice</button>
+        <button id="exportNaughty">Export Naughty</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
