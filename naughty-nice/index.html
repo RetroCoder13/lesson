@@ -31,6 +31,12 @@
         <div>
             <button id="exportNice">Export Nice</button>
             <button id="exportNaughty">Export Naughty</button>
+            <br>
+            <label for="importNice">Import Nice</label>
+            <input type="file" name="importNice" id="importNice" oninput="loadFile(this,true)">
+            <br>
+            <label for="importNaughty">Import Naughty</label>
+            <input type="file" name="importNaughty" id="importNaughty" oninput="loadFile(this,false)">
         </div>
     </div>
     <script src="main.js"></script>

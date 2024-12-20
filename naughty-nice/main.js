@@ -28,7 +28,7 @@ form.onsubmit = function(e){
 document.querySelector("#exportNice").onclick = function(){
     let element = document.createElement('a')
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(niceList.replaceAll("{/n}","\n")))
-    element.setAttribute('download', 'niceList.txt')
+    element.setAttribute('download', 'Nice List.txt')
     element.style.display = 'none'
     document.body.appendChild(element)
     element.click()
@@ -38,11 +38,25 @@ document.querySelector("#exportNice").onclick = function(){
 document.querySelector("#exportNaughty").onclick = function(){
     let element = document.createElement('a')
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(naughtyList.replaceAll("{/n}","\n")))
-    element.setAttribute('download', 'naughtyList.txt')
+    element.setAttribute('download', 'Naughty List.txt')
     element.style.display = 'none'
     document.body.appendChild(element)
     element.click()
     document.body.removeChild(element)
+}
+
+var fetched
+function loadFile(object, nice){
+    filereader = new FileReader()
+    filereader.onload = async function(){
+        // fetched = await fetch(filereader.result)
+        if(nice){
+            niceList = filereader.result.replaceAll("\n","{/n}")
+        } else {
+            naughtyList = filereader.result.replaceAll("\n","{/n}")
+        }
+    }
+    filereader.readAsText(object.files[0])
 }
 
 if(urlDataString != undefined){
