@@ -6,9 +6,9 @@
 }
 
 form {
-    /* position: absolute;
+    position: relative;
     left: 50%;
-    transform: translate(-50%); */
+    transform: translate(-150px);
     display: grid;
     grid-template-columns: 100px 200px;
 }
