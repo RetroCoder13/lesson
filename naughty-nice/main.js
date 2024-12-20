@@ -49,7 +49,6 @@ var fetched
 function loadFile(object, nice){
     filereader = new FileReader()
     filereader.onload = async function(){
-        // fetched = await fetch(filereader.result)
         if(nice){
             niceList = filereader.result.replaceAll("\n","{/n}")
         } else {
