@@ -1,0 +1,59 @@
+public procedure setColour(newColour)
+    colour = colour
+endprocedure
+
+public procedure getColour()
+    return colour
+endprocedure
+
+public procedure getName()
+    return name
+endprocedure
+
+
+myDog3 = new Dog("Mutt","Unknown")
+myDog4 = new Dog("Jeff","Unknown")
+
+
+if myDog3.getColour == "Unknown" then
+    myDog3.setColour(input("Enter new colour: "))
+    print(myDog3.getName(), myDog3.getColour())
+endif
+
+
+public procedure chewShoe(numShoes)
+    shoesChewed += numShoes
+endprocedure
+
+
+public procedure getShoesChewed()
+    return shoesChewed
+endprocedure
+
+
+puppy = new Puppy("Jamie","blue")
+puppy.chewShoe(5)
+puppy.chewShoe(10)
+puppy.chewShoe(10000000)
+print(puppy.getName(), puppy.getShoesChewed())
+
+
+public procedure bark(barkTimes)
+    for i = 1 to barkTimes
+        print("Yap!")
+    next i
+endprocedure
+
+
+puppy = new Puppy("Malla","light brown","12/08/2016")
+
+
+puppy.bark(2)
+
+
+public procedure getDOB()
+    return dob
+endprocedure
+
+
+print(puppy.getName(), puppy.getColour(), puppy.getShoesChewed(), puppy.getDOB())

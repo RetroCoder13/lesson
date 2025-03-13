@@ -1,0 +1,10 @@
+procedure sumEven(n):
+    if n == 2 then
+        return 2
+    else if n < 2 then
+        return 0
+    else if n % 2 == 0 then
+        return n + sumEven(n-2)
+    else if n > 2 then
+        return n-1 + sumEven(n-3)
+endprocedure
