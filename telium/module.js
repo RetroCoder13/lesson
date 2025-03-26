@@ -1,13 +1,12 @@
 class Module{
-    constructor(name,type){
+    constructor(name,x,y,w,h){
+        this.x = x
+        this.y = y
+        this.w = w
+        this.h = h
         this.name = name
         this.queen = false
         this.workerAlien = false
-        if(type == "shaft" || type == "panel" || type == "normal"){
-            this.type = type
-        } else {
-            this.type = "normal"
-        }
     }
 
     setQueen(state){
@@ -18,15 +17,26 @@ class Module{
         this.workerAlien = state
     }
 
-    render(x,y,w,h){
-        if(this.queen){
-            ctx.fillColor = "#F00"
-        } else if (this.workerAlien){
-            ctx.fillColor = "#FF0"
-        } else {
-            ctx.fillColor = "#0F0"
-        }
-        ctx.fillRect(x,y,w,h)
-        ctx.fillText(this.name,x,y,w)
+    setPosition(x,y,w,h){
+        this.x = x
+        this.y = y
+        this.w = w
+        this.h = h
     }
+
+    render(){
+        if(this.queen){
+            ctx.fillStyle = "#F00"
+        } else if(this.workerAlien){
+            ctx.fillStyle = "#FF0"
+        } else {
+            ctx.fillStyle = "#555"
+        }
+        ctx.fillRect(this.x,this.y,this.w,this.h)
+        ctx.fillText(this.name,this.x,this.y,this.w)
+    }
+}
+
+class VentilationModule extends Module{
+
 }
