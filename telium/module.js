@@ -24,8 +24,10 @@ class Module{
         this.h = h
     }
 
-    render(){
-        if(this.queen){
+    render(player){
+        if(player){
+            ctx.fillStyle = "#00F"
+        } else if(this.queen){
             ctx.fillStyle = "#F00"
         } else if(this.workerAlien){
             ctx.fillStyle = "#FF0"
