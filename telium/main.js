@@ -1,6 +1,8 @@
 var canvas = document.querySelector("canvas")
 var ctx = canvas.getContext("2d")
 
+var inputManager = new InputManager()
+
 var moduleManager = new ModuleManager()
 moduleManager.addModule(new Module("1",475,10,50,50))
 moduleManager.addModule(new Module("2",375,85,50,50))
@@ -39,6 +41,7 @@ moduleManager.addConnection(8,14)
 moduleManager.addConnection(9,10)
 moduleManager.addConnection(9,14)
 moduleManager.addConnection(9,15)
+moduleManager.addConnection(10,15)
 moduleManager.addConnection(11,12)
 moduleManager.addConnection(11,16)
 moduleManager.addConnection(12,16)
@@ -47,7 +50,9 @@ moduleManager.addConnection(13,17)
 
 function update(){
     ctx.clearRect(0,0,1000,500)
-    moduleManager.update()
+
+    moduleManager.update(inputManager)
+
     requestAnimationFrame(update)
 }
 
