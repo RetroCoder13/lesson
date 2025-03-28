@@ -20,7 +20,7 @@ moduleManager.addModule(new Module("13",775,235,50,50))
 moduleManager.addModule(new Module("14",175,310,50,50))
 moduleManager.addModule(new Module("15",375,310,50,50))
 moduleManager.addModule(new Module("16",575,310,50,50))
-moduleManager.addModule(new Module("17",775,310,50,50))
+moduleManager.addModule(new VentilationModule("17",775,310,50,50))
 
 moduleManager.addConnection(1,2)
 moduleManager.addConnection(1,3)

@@ -7,6 +7,7 @@ class Module{
         this.name = name
         this.queen = false
         this.workerAlien = false
+        this.colour = "#555"
     }
 
     setQueen(state){
@@ -32,7 +33,7 @@ class Module{
         } else if(this.workerAlien){
             ctx.fillStyle = "#FF0"
         } else {
-            ctx.fillStyle = "#555"
+            ctx.fillStyle = this.colour
         }
         ctx.fillRect(this.x,this.y,this.w,this.h)
         ctx.fillText(this.name,this.x,this.y,this.w)
@@ -40,5 +41,8 @@ class Module{
 }
 
 class VentilationModule extends Module{
-
+    constructor(name,x,y,w,h){
+        super(name,x,y,w,h)
+        this.colour = "#777"
+    }
 }
