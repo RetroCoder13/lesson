@@ -89,7 +89,8 @@ class ModuleManager{
                 for(let j=0;j<this.connectors.length;j++){
                     if(JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) || JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player]))){
                         this.player = i
-                        this.moveQueen()
+                        let that = this
+                        setTimeout(function(){that.moveQueen()},100)
                     }
                     break
                 }
