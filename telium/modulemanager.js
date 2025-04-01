@@ -1,6 +1,7 @@
 class ModuleManager{
     constructor(){
         this.player = 0
+        this.queen = Math.round(Math.random()*15+1)
         this.modules = []
         this.connectors = []
     }
@@ -23,6 +24,29 @@ class ModuleManager{
 
     setPosition(n,x,y,w,h){
         this.modules[n].setPosition(x,y,w,h)
+    }
+
+    moveQueen(){
+        let options = []
+        for(let i=0;i<this.connectors.length;i++){
+            if(this.connectors[i][0] == this.queen || this.connectors[i][1] == this.queen){
+                options.push(this.connectors[i])
+            }
+        }
+
+        for(let i=0;i<this.modules.length;i++){
+            this.setQueen(i,false)
+        }
+
+        let option = options[Math.round(Math.random()*(options.length-1))]
+
+        if(option[0] == this.queen){
+            this.setQueen(option[1],true)
+            this.queen = option[1]
+        } else {
+            this.setQueen(option[0],true)
+            this.queen = option[0]
+        }
     }
 
     initialise(){
@@ -65,6 +89,7 @@ class ModuleManager{
                 for(let j=0;j<this.connectors.length;j++){
                     if(JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) || JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player]))){
                         this.player = i
+                        this.moveQueen()
                     }
                     break
                 }
