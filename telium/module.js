@@ -44,5 +44,10 @@ class VentilationModule extends Module{
     constructor(name,x,y,w,h){
         super(name,x,y,w,h)
         this.colour = "#777"
+        this.locked= false
+    }
+
+    setLock(state){
+        this.locked = state
     }
 }

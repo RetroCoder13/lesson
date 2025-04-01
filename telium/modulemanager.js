@@ -44,6 +44,12 @@ class ModuleManager{
 
     update(inputManager){
         for(let i=0;i<this.connectors.length;i++){
+            ctx.lineWidth = "10"
+            if(this.connectors[i][0] == this.player || this.connectors[i][1] == this.player){
+                ctx.strokeStyle = "#AAF"
+            } else {
+                ctx.strokeStyle = "#AAA"
+            }
             ctx.beginPath()
             ctx.moveTo(this.modules[this.connectors[i][0]].x+this.modules[this.connectors[i][0]].w/2,this.modules[this.connectors[i][0]].y+this.modules[this.connectors[i][0]].h/2)
             ctx.lineTo(this.modules[this.connectors[i][1]].x+this.modules[this.connectors[i][1]].w/2,this.modules[this.connectors[i][1]].y+this.modules[this.connectors[i][1]].h/2)
