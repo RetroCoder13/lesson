@@ -3,6 +3,9 @@ var ctx = canvas.getContext("2d")
 
 var inputManager = new InputManager()
 
+var lockIcon = new Image()
+lockIcon.src = "./lock.svg"
+
 var moduleManager = new ModuleManager()
 moduleManager.addModule(new Module("1",475,25,50,50))
 moduleManager.addModule(new Module("2",375,125,50,50))

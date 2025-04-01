@@ -34,17 +34,11 @@ class ModuleManager{
             }
         }
 
-        for(let i=0;i<this.modules.length;i++){
-            this.setQueen(i,false)
-        }
-
         let option = options[Math.round(Math.random()*(options.length-1))]
 
         if(option[0] == this.queen){
-            this.setQueen(option[1],true)
             this.queen = option[1]
         } else {
-            this.setQueen(option[0],true)
             this.queen = option[0]
         }
     }
@@ -95,7 +89,7 @@ class ModuleManager{
                     break
                 }
             }
-            this.modules[i].render(i==this.player)
+            this.modules[i].render(i==this.player,i==this.queen,false,false)
         }
     }
 }
