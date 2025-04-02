@@ -30,7 +30,7 @@ class ModuleManager{
     moveQueen(){
         let options = []
         for(let i=0;i<this.connectors.length;i++){
-            if((this.connectors[i][0] == this.queen && this.connectors[i][1] != this.player && this.connectors[i][1] != this.playerLast) || (this.connectors[i][1] == this.queen && this.connectors[i][0] != this.player && this.connectors[i][0] != this.playerLast)){
+            if((this.connectors[i][0] == this.queen && this.connectors[i][1] != this.player && this.connectors[i][1] != this.playerLast && !this.modules[this.connectors[i][1]].locked) || (this.connectors[i][1] == this.queen && this.connectors[i][0] != this.player && this.connectors[i][0] != this.playerLast && !this.modules[this.connectors[i][0]].locked)){
                 options.push(this.connectors[i])
             }
         }
@@ -85,17 +85,17 @@ class ModuleManager{
             && inputManager.getMouse().pos[1] > this.modules[i].y
             && inputManager.getMouse().pos[1] < this.modules[i].y + this.modules[i].h
             && inputManager.getMouse().click){
-                for(let j=0;j<this.connectors.length;j++){
-                    if(JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) || JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player]))){
+                // for(let j=0;j<this.modules.length;j++){
+                    if((JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) && !this.modules[this.connectors[i][1]].locked) || (JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player])) && !this.modules[this.connectors[i][1]].locked)){
                         this.playerLast = this.player
                         this.player = i
                         let that = this
                         setTimeout(function(){that.moveQueen()},100)
                     }
-                    break
-                }
+                    // break
+                // }
             }
-            this.modules[i].render(i==this.player,i==this.queen,false,false)
+            this.modules[i].render(i==this.player,i==this.queen,false,this.modules[i].locked)
         }
     }
 }
