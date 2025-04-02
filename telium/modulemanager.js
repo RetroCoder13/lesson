@@ -1,6 +1,7 @@
 class ModuleManager{
     constructor(){
         this.player = 0
+        this.playerLast = 0
         this.queen = Math.round(Math.random()*15+1)
         this.modules = []
         this.connectors = []
@@ -29,7 +30,7 @@ class ModuleManager{
     moveQueen(){
         let options = []
         for(let i=0;i<this.connectors.length;i++){
-            if((this.connectors[i][0] == this.queen && this.connectors[i][1] != this.player) || (this.connectors[i][1] == this.queen && this.connectors[i][0] != this.player)){
+            if((this.connectors[i][0] == this.queen && this.connectors[i][1] != this.player && this.connectors[i][1] != this.playerLast) || (this.connectors[i][1] == this.queen && this.connectors[i][0] != this.player && this.connectors[i][0] != this.playerLast)){
                 options.push(this.connectors[i])
             }
         }
@@ -86,6 +87,7 @@ class ModuleManager{
             && inputManager.getMouse().click){
                 for(let j=0;j<this.connectors.length;j++){
                     if(JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) || JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player]))){
+                        this.playerLast = this.player
                         this.player = i
                         let that = this
                         setTimeout(function(){that.moveQueen()},100)
