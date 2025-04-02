@@ -36,15 +36,15 @@ class ModuleManager{
         }
 
         if(options.length == 0){
-            console.log("You won")
-        }
-
-        let option = options[Math.round(Math.random()*(options.length-1))]
-
-        if(option[0] == this.queen){
-            this.queen = option[1]
+            document.write("You won")
         } else {
-            this.queen = option[0]
+            let option = options[Math.round(Math.random()*(options.length-1))]
+
+            if(option[0] == this.queen){
+                this.queen = option[1]
+            } else {
+                this.queen = option[0]
+            }
         }
     }
 
