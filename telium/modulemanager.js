@@ -29,9 +29,13 @@ class ModuleManager{
     moveQueen(){
         let options = []
         for(let i=0;i<this.connectors.length;i++){
-            if(this.connectors[i][0] == this.queen || this.connectors[i][1] == this.queen){
+            if((this.connectors[i][0] == this.queen && this.connectors[i][1] != this.player) || (this.connectors[i][1] == this.queen && this.connectors[i][0] != this.player)){
                 options.push(this.connectors[i])
             }
+        }
+
+        if(options.length == 0){
+            console.log("You won")
         }
 
         let option = options[Math.round(Math.random()*(options.length-1))]
