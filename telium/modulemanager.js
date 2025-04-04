@@ -87,7 +87,11 @@ class ModuleManager{
             && inputManager.getMouse().click){
                 // for(let j=0;j<this.modules.length;j++){
                     if((JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) && !this.modules[this.connectors[i][1]].locked) || (JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player])) && !this.modules[this.connectors[i][1]].locked)){
-                        this.playerLast = this.player
+                        if(this.queen == i){
+                            this.playerLast = this.player
+                        } else {
+                            this.playerLast = i
+                        }
                         this.player = i
                         let that = this
                         setTimeout(function(){that.moveQueen()},100)
