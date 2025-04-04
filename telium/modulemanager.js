@@ -50,7 +50,7 @@ class ModuleManager{
 
     initialise(){
         let vents = 3
-        let list = Array.from(Array(10).keys())
+        let list = Array.from(Array(this.modules.length).keys())
         list.splice(0,1)
         console.log(list)
         for(let i=0;i<vents;i++){
