@@ -51,11 +51,13 @@ class ModuleManager{
     initialise(){
         let vents = 3
         let list = Array.from(Array(10).keys())
+        list.splice(0,1)
+        console.log(list)
         for(let i=0;i<vents;i++){
             let id = Math.round(Math.random()*(list.length-1))
-            let module = this.modules[id]
-            this.modules[id] = new VentilationModule(module.name,module.x,module.y,module.w,module.h)
-            delete list[id]
+            let module = this.modules[list[id]]
+            this.modules[list[id]] = new VentilationModule(module.name,module.x,module.y,module.w,module.h)
+            list.splice(id,1)
         }
     }
 
