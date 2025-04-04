@@ -23,7 +23,7 @@ moduleManager.addModule(new Module("13",775,325,50,50))
 moduleManager.addModule(new Module("14",175,425,50,50))
 moduleManager.addModule(new Module("15",375,425,50,50))
 moduleManager.addModule(new Module("16",575,425,50,50))
-moduleManager.addModule(new VentilationModule("17",775,425,50,50))
+moduleManager.addModule(new Module("17",775,425,50,50))
 
 moduleManager.addConnection(1,2)
 moduleManager.addConnection(1,3)
@@ -50,6 +50,8 @@ moduleManager.addConnection(11,16)
 moduleManager.addConnection(12,16)
 moduleManager.addConnection(12,17)
 moduleManager.addConnection(13,17)
+
+moduleManager.initialise()
 
 function update(){
     ctx.clearRect(0,0,1000,500)

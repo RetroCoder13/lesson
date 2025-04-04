@@ -49,19 +49,13 @@ class ModuleManager{
     }
 
     initialise(){
-        let workers = 3
         let vents = 3
-        let list = []
-        for(let i=1;i<this.modules.length;i++){
-            list.append(i)
-        }
-        for(let i=0;i<6;i++){
-            let random = Math.round(Math.random()*list.length)
-            if(workers<3){
-                this.modules[list[random]].setWorkerAlien(true)
-                workers--
-            }
-            list.pop(random)
+        let list = Array.from(Array(10).keys())
+        for(let i=0;i<vents;i++){
+            let id = Math.round(Math.random()*(list.length-1))
+            let module = this.modules[id]
+            this.modules[id] = new VentilationModule(module.name,module.x,module.y,module.w,module.h)
+            delete list[id]
         }
     }
 
@@ -86,7 +80,7 @@ class ModuleManager{
             && inputManager.getMouse().pos[1] < this.modules[i].y + this.modules[i].h
             && inputManager.getMouse().click){
                 // for(let j=0;j<this.modules.length;j++){
-                    if((JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) && !this.modules[this.connectors[i][1]].locked) || (JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player])) && !this.modules[this.connectors[i][1]].locked)){
+                    if((JSON.stringify(this.connectors).includes(JSON.stringify([this.player,i])) && !this.modules[i].locked) || (JSON.stringify(this.connectors).includes(JSON.stringify([i,this.player])) && !this.modules[i].locked)){
                         if(!this.modules[i].locked){
                             if(this.queen == i){
                                 this.playerLast = this.player
