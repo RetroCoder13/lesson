@@ -19,7 +19,7 @@ class Queue{
             }
             this.queue[this.rear] = item
         } else {
-            return -1
+            throw "Queue is full"
         }
     }
 
@@ -32,7 +32,7 @@ class Queue{
             }
             return this.queue[this.front-1]
         } else {
-            return -1
+            throw "Queue is empty"
         }
     }
 
