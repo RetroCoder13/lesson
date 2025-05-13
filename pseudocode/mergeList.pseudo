@@ -1,0 +1,27 @@
+list1 = [2,5,15,36,47,56,59,78,156,244,268]
+list2 = [18,39,42,43,66,69,100]
+mergeList = []
+
+while len(list2) > 0 and len(list1) > 0:
+    if list1[0] > list2[0] then
+        mergeList.append(list2[0])
+        list2.pop(0)
+    else
+        mergeList.append(list1[0])
+        list1.pop(0)
+    endif
+endwhile
+
+if len(list1) > 0 then
+    for i = 0 to len(list1)-1
+        mergeList.append(list1[0])
+        list1.pop(0)
+    next i
+else
+    for i = 0 to len(list2)-1
+        mergeList.append(list2[0])
+        list2.pop(0)
+    next i
+endif
+
+print(mergeList)
