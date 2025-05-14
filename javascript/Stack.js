@@ -22,4 +22,20 @@ class Stack{
             throw "Stack underflow"
         }
     }
+
+    peek(){
+        if(this.size > 0){
+            return this.stack[this.size-1]
+        } else {
+            throw "Stack underflow"
+        }
+    }
+
+    isFull(){
+        return this.size == this.maxSize
+    }
+
+    isEmpty(){
+        return this.size == 0
+    }
 }
