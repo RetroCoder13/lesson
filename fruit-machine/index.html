@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fruit Machine</title>
+    <style>
+        *{
+            --width: 200px;
+        }
+        div.content{
+            display: grid;
+            grid-template-columns: var(--width) var(--width) var(--width);
+        }
+        div.spinner{
+            width: var(--width);
+            height: var(--width);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: var(--width);
+            gap: 10px
+        }
+        div.spinner>img{
+            transform: translateY(-10px);
+        }
+        img{
+            width: var(--width);
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="spinner" id="0">
+            <img src="https://openmoji.org/data/color/svg/1F352.svg">
+            <img src="https://openmoji.org/data/color/svg/1F514.svg">
+            <img src="https://openmoji.org/data/color/svg/1F34B.svg">
+            <img src="https://openmoji.org/data/color/svg/1F34A.svg">
+            <img src="https://openmoji.org/data/color/svg/2B50.svg">
+            <img src="https://openmoji.org/data/color/svg/2620.svg">
+        </div>
+        <div class="spinner" id="1">
+            <img src="https://openmoji.org/data/color/svg/1F352.svg">
+            <img src="https://openmoji.org/data/color/svg/1F514.svg">
+            <img src="https://openmoji.org/data/color/svg/1F34B.svg">
+            <img src="https://openmoji.org/data/color/svg/1F34A.svg">
+            <img src="https://openmoji.org/data/color/svg/2B50.svg">
+            <img src="https://openmoji.org/data/color/svg/2620.svg">
+        </div>
+        <div class="spinner" id="2">
+            <img src="https://openmoji.org/data/color/svg/1F352.svg">
+            <img src="https://openmoji.org/data/color/svg/1F514.svg">
+            <img src="https://openmoji.org/data/color/svg/1F34B.svg">
+            <img src="https://openmoji.org/data/color/svg/1F34A.svg">
+            <img src="https://openmoji.org/data/color/svg/2B50.svg">
+            <img src="https://openmoji.org/data/color/svg/2620.svg">
+        </div>
+    </div>
+    <button>Stop Spin</button>
+    <script src="main.js"></script>
+</body>
+</html>
