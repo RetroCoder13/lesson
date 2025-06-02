@@ -12,7 +12,7 @@ function update(){
         spinning[spinning.findIndex(function(n){return n == true})] = false
         stopSpin = false
     }
-    increment = 10
+    increment = 20
     totalIncrement += increment
     document.querySelectorAll("div.spinner").forEach(function(s){
         if(spinning[parseInt(s.id)]){
