@@ -41,8 +41,8 @@ function update(){
         } else if(items[0] == items[1] || items[0] == items[2] || items[1] == items[2]){
             score += .5
         }
-        score = score.toFixed(1)
-        document.getElementById('score').innerHTML = `Score: ${score}`
+        score = score.toFixed(2)
+        document.getElementById('score').innerHTML = `Credit: £${score}`
     }
 
     requestAnimationFrame(update)
